@@ -65,129 +65,6 @@ $poruka_obavezno = "Obavezno polje";
   <link href="css/responsive.css" rel="stylesheet" />
   <!-- Color Scheme -->
   <link href="css/color.css" rel="stylesheet">
-
-
- <script>
-        $(window).load( function(){
-
-            //form1
-     	  // $('#form1').sForm({
-     	  //   ownerEmail:'#',
-     	  //   sitename:'sitename.link'
-   	    //     })
-
-			//isotope
-            var $container = $('#container');
-                //Run to initialise column sizes
-                updateSize();
-
-                //Load masonry when images all loaded
-                $container.imagesLoaded( function(){
-
-                    $container.isotope({
-                        // options
-                        itemSelector : '.element',
-                        layoutMode : 'masonry',
-                        transformsEnabled: true,
-                        columnWidth: function( containerWidth ) {
-                            containerWidth = $browserWidth;
-                            return Math.floor(containerWidth / $cols);
-                          }
-                    });
-                });
-
-            	    // update columnWidth on window resize
-                $(window).smartresize(function(){
-                    updateSize();
-                    $container.isotope( 'reLayout' );
-                });
-
-                //Set item size
-                function updateSize() {
-                    $browserWidth = $container.width();
-                    $cols = 3;
-
-                    if ($browserWidth >= 1170) {
-                        $cols = 3;
-                    }
-                    else if ($browserWidth >= 767 && $browserWidth < 1170) {
-                        $cols = 3;
-                    }
-                    else if ($browserWidth >= 480 && $browserWidth < 767) {
-                        $cols = 2;
-                    }
-                    else if ($browserWidth >= 220 && $browserWidth < 480) {
-                        $cols = 1;
-                    }
-                    //console.log("Browser width is:" + $browserWidth);
-                    //console.log("Cols is:" + $cols);
-
-                    // $gutterTotal = $cols * 20;
-            		$browserWidth = $browserWidth; // - $gutterTotal;
-                    $itemWidth = $browserWidth / $cols;
-                    $itemWidth = Math.floor($itemWidth);
-
-                    $(".element").each(function(index){
-                        $(this).css({"width":$itemWidth+"px"});
-                    });
-
-
-
-            	  var $optionSets = $('#options .option-set'),
-            	      $optionLinks = $optionSets.find('a');
-
-            	  $optionLinks.click(function(){
-            	    var $this = $(this);
-            	    // don't proceed if already selected
-            	    if ( $this.hasClass('selected') ) {
-            	      return false;
-            	    }
-            	    var $optionSet = $this.parents('.option-set');
-            	    $optionSet.find('.selected').removeClass('selected');
-            	    $this.addClass('selected');
-
-            	    // make option object dynamically, i.e. { filter: '.my-filter-class' }
-            	    var options = {},
-            	        key = $optionSet.attr('data-option-key'),
-            	        value = $this.attr('data-option-value');
-            	    // parse 'false' as false boolean
-            	    value = value === 'false' ? false : value;
-            	    options[ key ] = value;
-            	    if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
-            	      // changes in layout modes need extra logic
-            	      changeLayoutMode( $this, options )
-            	    } else {
-            	      // otherwise, apply new options
-            	      $container.isotope( options );
-            	    }
-
-            	    return false;
-            	  });
-
-                };
-
-            //thumb
-            // Initialize the gallery
-            $('.thumb').touchTouch();
-
-
-
-			
-
-
-								});
-
-    </script>
-
-
-
-
-
-
-
-
-
-
 </head>
 
 
@@ -344,7 +221,7 @@ $poruka_obavezno = "Obavezno polje";
         </div>
 
 
-        <div class="row" id="kvalifikacije">
+        <div class="row">
           <div class="col-md-6 top-pad-40 bottom-pad-40 text-left">
             <h3>Kvalifikacije:</h3>
             <ul class="listPosao">
@@ -378,7 +255,7 @@ $poruka_obavezno = "Obavezno polje";
         </div>
 
 
-        <div class="row" id="opis">
+        <div class="row">
           <div class="col-md-6 top-pad-40 bottom-pad-40 text-left">
             <h3 data-animation="fadeInUp">Opis Posla:</h3>
 
@@ -435,20 +312,6 @@ $poruka_obavezno = "Obavezno polje";
           </div>
         </div>
       </div>
-
-    <div class="row natjecaji" id="nat">
-              <div class="col-sm-8 col-md-8 col-md-offset-2 col-lg-offset-2 col-xs-offset-0"
-                data-animation="fadeInRight">
-                <div class="section-title" data-animation="fadeInUp">
-                  <h2 class="title">Natječaji</h2>
-                </div>
-                
-              </div>
-            </div>
-
-
-
-
     </section>
 
 
@@ -457,7 +320,7 @@ $poruka_obavezno = "Obavezno polje";
         <h5 class="title"><a href="#" id="jobInt"><i class="fa fa-2x fa-angle-double-down down" aria-hidden="true"></i>
             PRIJAVITE SE NA NATJEČAJ <i class="fa fa-2x fa-angle-double-down down" aria-hidden="true"></i></h5></a>
       </div>
-      </section>
+      </sectoin>
 
 
 
@@ -472,7 +335,15 @@ $poruka_obavezno = "Obavezno polje";
           <div class="row" id="jobForm" data-animation="fadeInLeft">
 
 
-        
+            <div class="row natjecaji">
+              <div class="col-sm-8 col-md-8 col-md-offset-2 col-lg-offset-2 col-xs-offset-0"
+                data-animation="fadeInRight">
+                <div class="section-title" data-animation="fadeInUp">
+                  <h2 class="title">Natječaji</h2>
+                </div>
+                <p>trenutno nema</p>
+              </div>
+            </div>
 
 
 
@@ -485,13 +356,7 @@ $poruka_obavezno = "Obavezno polje";
 
 
             <div class="col-lg-12 col-md-10 col-sm-8">
-              <form id="contact-form" class="contact-form">
-
-
-        <? $poruka_obavezno = "*Ovo polje je obavezno."; ?>
-					<? $poruka_broj = "*Dozvoljeni su samo upis brojeva."; ?>
-					<? $poruka_tekst = "*Dozvoljen je samo upis teksta."; ?>
-
+              <form id="contact-form" class="contact-form" method="post">
 
                 <div class="row">
                   <div class="col-lg-2 col-md-2">
@@ -499,8 +364,6 @@ $poruka_obavezno = "Obavezno polje";
                       <input type="text" class="form-control" placeholder="Ime*:" data-constraints="@Required" />
                       <span class="empty-message">
                         <? print $poruka_obavezno; ?></span>
-                        <span class="empty-message"><? print $poruka_obavezno; ?></span>
-                        <span class="error-message"><? print $poruka_broj; ?></span>
 
                     </label>
                   </div>

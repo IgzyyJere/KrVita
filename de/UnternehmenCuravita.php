@@ -23,7 +23,7 @@ $poruka_obavezno = "Obavezno polje";
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
 
@@ -43,151 +43,28 @@ $poruka_obavezno = "Obavezno polje";
   <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+sans:300,400,700,400italic,700italic'>
   <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
   <!-- Font Awesome Icons -->
-  <link href='css/font-awesome.min.css' rel='stylesheet' type='text/css' />
+  <link href='../css/font-awesome.min.css' rel='stylesheet' type='text/css' />
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/hover-dropdown-menu.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/hover-dropdown-menu.css" rel="stylesheet">
   <!-- Icomoon Icons -->
-  <link href="css/icons.css" rel="stylesheet">
+  <link href="../css/icons.css" rel="stylesheet">
   <!-- Revolution Slider -->
-  <link href="css/revolution-slider.css" rel="stylesheet">
-  <link href="rs-plugin/css/settings.css" rel="stylesheet">
+  <link href="../css/revolution-slider.css" rel="stylesheet">
+  <link href="../rs-plugin/css/settings.css" rel="stylesheet">
   <!-- Animations -->
-  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="../css/animate.min.css" rel="stylesheet">
   <!-- Owl Carousel Slider -->
-  <link href="css/owl/owl.carousel.css" rel="stylesheet">
-  <link href="css/owl/owl.theme.css" rel="stylesheet">
-  <link href="css/owl/owl.transitions.css" rel="stylesheet">
+  <link href="../css/owl/owl.carousel.css" rel="stylesheet">
+  <link href="../css/owl/owl.theme.css" rel="stylesheet">
+  <link href="../css/owl/owl.transitions.css" rel="stylesheet">
   <!-- PrettyPhoto Popup -->
-  <link href="css/prettyPhoto.css" rel="stylesheet">
+  <link href="../css/prettyPhoto.css" rel="stylesheet">
   <!-- Custom Style -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/responsive.css" rel="stylesheet" />
   <!-- Color Scheme -->
-  <link href="css/color.css" rel="stylesheet">
-
-
- <script>
-        $(window).load( function(){
-
-            //form1
-     	  // $('#form1').sForm({
-     	  //   ownerEmail:'#',
-     	  //   sitename:'sitename.link'
-   	    //     })
-
-			//isotope
-            var $container = $('#container');
-                //Run to initialise column sizes
-                updateSize();
-
-                //Load masonry when images all loaded
-                $container.imagesLoaded( function(){
-
-                    $container.isotope({
-                        // options
-                        itemSelector : '.element',
-                        layoutMode : 'masonry',
-                        transformsEnabled: true,
-                        columnWidth: function( containerWidth ) {
-                            containerWidth = $browserWidth;
-                            return Math.floor(containerWidth / $cols);
-                          }
-                    });
-                });
-
-            	    // update columnWidth on window resize
-                $(window).smartresize(function(){
-                    updateSize();
-                    $container.isotope( 'reLayout' );
-                });
-
-                //Set item size
-                function updateSize() {
-                    $browserWidth = $container.width();
-                    $cols = 3;
-
-                    if ($browserWidth >= 1170) {
-                        $cols = 3;
-                    }
-                    else if ($browserWidth >= 767 && $browserWidth < 1170) {
-                        $cols = 3;
-                    }
-                    else if ($browserWidth >= 480 && $browserWidth < 767) {
-                        $cols = 2;
-                    }
-                    else if ($browserWidth >= 220 && $browserWidth < 480) {
-                        $cols = 1;
-                    }
-                    //console.log("Browser width is:" + $browserWidth);
-                    //console.log("Cols is:" + $cols);
-
-                    // $gutterTotal = $cols * 20;
-            		$browserWidth = $browserWidth; // - $gutterTotal;
-                    $itemWidth = $browserWidth / $cols;
-                    $itemWidth = Math.floor($itemWidth);
-
-                    $(".element").each(function(index){
-                        $(this).css({"width":$itemWidth+"px"});
-                    });
-
-
-
-            	  var $optionSets = $('#options .option-set'),
-            	      $optionLinks = $optionSets.find('a');
-
-            	  $optionLinks.click(function(){
-            	    var $this = $(this);
-            	    // don't proceed if already selected
-            	    if ( $this.hasClass('selected') ) {
-            	      return false;
-            	    }
-            	    var $optionSet = $this.parents('.option-set');
-            	    $optionSet.find('.selected').removeClass('selected');
-            	    $this.addClass('selected');
-
-            	    // make option object dynamically, i.e. { filter: '.my-filter-class' }
-            	    var options = {},
-            	        key = $optionSet.attr('data-option-key'),
-            	        value = $this.attr('data-option-value');
-            	    // parse 'false' as false boolean
-            	    value = value === 'false' ? false : value;
-            	    options[ key ] = value;
-            	    if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
-            	      // changes in layout modes need extra logic
-            	      changeLayoutMode( $this, options )
-            	    } else {
-            	      // otherwise, apply new options
-            	      $container.isotope( options );
-            	    }
-
-            	    return false;
-            	  });
-
-                };
-
-            //thumb
-            // Initialize the gallery
-            $('.thumb').touchTouch();
-
-
-
-			
-
-
-								});
-
-    </script>
-
-
-
-
-
-
-
-
-
-
+  <link href="../css/color.css" rel="stylesheet">
 </head>
 
 
@@ -216,22 +93,22 @@ $poruka_obavezno = "Obavezno polje";
                     <span class="icon-bar"></span>
                   </button>
                   <!-- Logo -->
-                  <a class="navbar-brand" href="index.html"><img class="site_logo" alt="Site Logo"
-                      src="img/logo.png"></a>
+                  <a class="navbar-brand" href="../index-de.html"><img class="site_logo" alt="Site Logo"
+                      src="../img/logo.png"></a>
                 </div>
                 <!-- Navbar Collapse -->
                 <div id="topnav" class="navbar-collapse collapse">
                   <!-- nav -->
                   <ul class="nav navbar-nav">
-                    <li><a href="index.html#team" class="scroll">O nama</a></li>
-                    <li><a href="index.html" class="scroll">Naslovna</a></li>
+                    <li><a href="../index-de.html#team" class="scroll">O nama</a></li>
+                    <li><a href="../index-de.html" class="scroll">Naslovna</a></li>
 
 
-                    <li><a href="index.html#faq" class="scroll">Vaša pitanja</a></li>
-                    <li><a href="index.html#contact-us" class="scroll">Kontakt</a></li>
-                    <li><a href="index-de.html" class="scroll"><img alt="Deutsch" src="img/ger15.png"></a></li>
-                    <li><a href="index.html" class="scroll"><img alt="Hrvatski" src="img/cro15.png"></a></li>
-                    <li><a href="index-en.html" class="scroll"><img alt="English" src="img/uk15.png"> </a></li>
+                    <li><a href="../index-de.html#faq" class="scroll">Vaša pitanja</a></li>
+                    <li><a href="../index-de.html#contact-us" class="scroll">Kontakt</a></li>
+                    <li><a href="../index-de.html" class="scroll"><img alt="Deutsch" src="../img/ger15.png"></a></li>
+                    <li><a href="../index.html" class="scroll"><img alt="Hrvatski" src="../img/cro15.png"></a></li>
+                    <li><a href="../index-en.html" class="scroll"><img alt="English" src="../img/uk15.png"> </a></li>
                     <!-- Header Contact -->
                     <li class="hidden-767">
                       <a href="#" class="header-contact">
@@ -344,7 +221,7 @@ $poruka_obavezno = "Obavezno polje";
         </div>
 
 
-        <div class="row" id="kvalifikacije">
+        <div class="row">
           <div class="col-md-6 top-pad-40 bottom-pad-40 text-left">
             <h3>Kvalifikacije:</h3>
             <ul class="listPosao">
@@ -378,7 +255,7 @@ $poruka_obavezno = "Obavezno polje";
         </div>
 
 
-        <div class="row" id="opis">
+        <div class="row">
           <div class="col-md-6 top-pad-40 bottom-pad-40 text-left">
             <h3 data-animation="fadeInUp">Opis Posla:</h3>
 
@@ -411,7 +288,7 @@ $poruka_obavezno = "Obavezno polje";
           </div>
 
           <div class="col-md-6 top-pad-150 bottom-pad-40">
-            <img src="img/sections/slider/curavita1_sm.jpg">
+            <img src="../img/sections/slider/curavita1_sm.jpg">
           </div>
         </div>
 
@@ -435,20 +312,6 @@ $poruka_obavezno = "Obavezno polje";
           </div>
         </div>
       </div>
-
-    <div class="row natjecaji" id="nat">
-              <div class="col-sm-8 col-md-8 col-md-offset-2 col-lg-offset-2 col-xs-offset-0"
-                data-animation="fadeInRight">
-                <div class="section-title" data-animation="fadeInUp">
-                  <h2 class="title">Natječaji</h2>
-                </div>
-                
-              </div>
-            </div>
-
-
-
-
     </section>
 
 
@@ -457,7 +320,7 @@ $poruka_obavezno = "Obavezno polje";
         <h5 class="title"><a href="#" id="jobInt"><i class="fa fa-2x fa-angle-double-down down" aria-hidden="true"></i>
             PRIJAVITE SE NA NATJEČAJ <i class="fa fa-2x fa-angle-double-down down" aria-hidden="true"></i></h5></a>
       </div>
-      </section>
+      </sectoin>
 
 
 
@@ -472,7 +335,15 @@ $poruka_obavezno = "Obavezno polje";
           <div class="row" id="jobForm" data-animation="fadeInLeft">
 
 
-        
+            <div class="row natjecaji">
+              <div class="col-sm-8 col-md-8 col-md-offset-2 col-lg-offset-2 col-xs-offset-0"
+                data-animation="fadeInRight">
+                <div class="section-title" data-animation="fadeInUp">
+                  <h2 class="title">Natječaji</h2>
+                </div>
+                <p>trenutno nema</p>
+              </div>
+            </div>
 
 
 
@@ -485,13 +356,7 @@ $poruka_obavezno = "Obavezno polje";
 
 
             <div class="col-lg-12 col-md-10 col-sm-8">
-              <form id="contact-form" class="contact-form">
-
-
-        <? $poruka_obavezno = "*Ovo polje je obavezno."; ?>
-					<? $poruka_broj = "*Dozvoljeni su samo upis brojeva."; ?>
-					<? $poruka_tekst = "*Dozvoljen je samo upis teksta."; ?>
-
+              <form id="contact-form" class="contact-form" method="post">
 
                 <div class="row">
                   <div class="col-lg-2 col-md-2">
@@ -499,8 +364,6 @@ $poruka_obavezno = "Obavezno polje";
                       <input type="text" class="form-control" placeholder="Ime*:" data-constraints="@Required" />
                       <span class="empty-message">
                         <? print $poruka_obavezno; ?></span>
-                        <span class="empty-message"><? print $poruka_obavezno; ?></span>
-                        <span class="error-message"><? print $poruka_broj; ?></span>
 
                     </label>
                   </div>
@@ -1130,7 +993,7 @@ $poruka_obavezno = "Obavezno polje";
 
                   <div class="col-lg-6 col-md-6 top-pad-40 bottom-pad-40">
 
-                    <img src="img/logo2.png">
+                    <img src="../img/logo2.png">
 
                   </div>
                 </div>
@@ -1350,45 +1213,45 @@ $poruka_obavezno = "Obavezno polje";
 
 
 
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
   <!-- Menu jQuery plugin -->
-  <script type="text/javascript" src="js/hover-dropdown-menu.js"></script>
+  <script type="text/javascript" src="../js/hover-dropdown-menu.js"></script>
   <!-- Menu jQuery Bootstrap Addon -->
-  <script type="text/javascript" src="js/jquery.hover-dropdown-menu-addon.js"></script>
+  <script type="text/javascript" src="../js/jquery.hover-dropdown-menu-addon.js"></script>
   <!-- Scroll Top Menu -->
-  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
   <!-- Sticky Menu -->
-  <script type="text/javascript" src="js/jquery.sticky.js"></script>
+  <script type="text/javascript" src="../js/jquery.sticky.js"></script>
   <!-- Bootstrap Validation -->
-  <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrapValidator.min.js"></script>
   <!-- Revolution Slider -->
-  <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-  <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-  <script type="text/javascript" src="js/revolution-custom.js"></script>
+  <script type="text/javascript" src="../rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+  <script type="text/javascript" src="../rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+  <script type="text/javascript" src="../js/revolution-custom.js"></script>
   <!-- Portfolio Filter -->
-  <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.mixitup.min.js"></script>
   <!-- Animations -->
-  <script type="text/javascript" src="js/jquery.appear.js"></script>
-  <script type="text/javascript" src="js/effect.js"></script>
+  <script type="text/javascript" src="../js/jquery.appear.js"></script>
+  <script type="text/javascript" src="../js/effect.js"></script>
   <!-- Owl Carousel Slider -->
-  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="../js/owl.carousel.min.js"></script>
   <!-- Pretty Photo Popup -->
-  <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+  <script type="text/javascript" src="../js/jquery.prettyPhoto.js"></script>
   <!-- Parallax BG -->
-  <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+  <script type="text/javascript" src="../js/jquery.parallax-1.1.3.js"></script>
   <!-- Fun Factor / Counter -->
-  <script type="text/javascript" src="js/jquery.countTo.js"></script>
+  <script type="text/javascript" src="../js/jquery.countTo.js"></script>
   <!-- Twitter Feed -->
-  <script type="text/javascript" src="js/tweet/carousel.js"></script>
-  <script type="text/javascript" src="js/tweet/scripts.js"></script>
-  <script type="text/javascript" src="js/tweet/tweetie.min.js"></script>
+  <script type="text/javascript" src="../js/tweet/carousel.js"></script>
+  <script type="text/javascript" src="../js/tweet/scripts.js"></script>
+  <script type="text/javascript" src="../js/tweet/tweetie.min.js"></script>
   <!-- Background Video -->
-  <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+  <script type="text/javascript" src="../js/jquery.mb.YTPlayer.js"></script>
   <!-- Custom Js Code -->
-  <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="../js/custom.js"></script>
   <!-- Scripts -->
-  <script src="js/TMForm.js"></script>
+  <script src="../js/TMFormDe.js"></script>
   <script>
     $(document).ready(function () {
       // $("button, option, a").click(function(){

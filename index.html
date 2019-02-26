@@ -40,23 +40,19 @@
        <link href="css/responsive.css" rel="stylesheet" />
         <!-- Color Scheme -->
         <link href="css/color.css" rel="stylesheet">
-<!--GDPR--->
+        <!--GDPR--->
         <link href="css/gdpr-banner.css" rel="stylesheet">
 
-
-
-
-
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+        .mySlides {display:none;}
+        </style>
 
 
     </head>
 
 
-
-
     <body>
-
-
 		<div id="page">
 		 <!-- Page Loader -->
 			<div id="pageloader">
@@ -85,13 +81,41 @@
 									<div id="topnav" class="navbar-collapse collapse">
 										<!-- nav -->
 										<ul class="nav navbar-nav">
-											<li><a href="#team" class="scroll">O nama</a></li>
-											<li><a href="usluge.html" class="scroll">Naše usluge</a></li>
-                      <li><a href="posaoCuraVita.html" class="scroll">Posao</a></li>
-                      <li><a href="#contact-us" class="scroll">Kontakt</a></li>
 
-	                         <!-- <li><a href="#about-us" class="has-submenu">Klijenti i osoblje</a></li> -->
-											     <!-- <li><a href="#faq" class="scroll">Vaša pitanja</a></li> -->
+                                            <li class="dropdown">
+                                            <a href="#team" class="scroll">O nama<span class="caret"></span></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                    <li><a target="_blank" href="Pravila_privatnosti.html">Zaštita osobnih podataka</a></li>
+                                            </ul>
+                                            </li>
+                                         
+                                            
+                                            
+                                            
+                                            <li class="dropdown">
+                                                <a href="usluge.html" class="scroll">Naše usluge<span class="caret"></span></a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="upitnik_korisnik.php" class="scroll">Upitnik za korisnike</a></li>
+                                                </ul>
+                                            </li>
+
+
+                                            <li class="dropdown">
+                                                <a href="posaoCuraVita.php">Posao<span class="caret"></span></a>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                            <li><a href="posaoCuraVita.php#kvalifikacije" class="scroll" data-animation="pulse">Potrebne kvalifikacije</a></li>
+                                                            <li><a href="posaoCuraVita.php#opis" class="scroll" data-animation="pulse">Opis posla</a></li>
+                                                            <li><a href="posaoCuraVita.php#nat" class="scroll" data-animation="pulse">Natječaji</a></li>
+                                                            <li><a href="najcescaPitanja.html" class="scroll" data-animation="pulse">Najčešća pitanja</a></li>
+                                                        </ul>
+                                            </li>
+
+
+                                            <li><a href="#contact-us" class="scroll">Kontakt</a></li>
+                                          
+
+	                         <!-- <li><a href="#about-us" class="has-submenu">Klijenti i osoblje</a></li>
+											     <li><a href="#faq" class="scroll">Vaša pitanja</a></li> -->
 
 											<li><a href="index-de.html" class="scroll"><img alt="Deutsch" src="img/ger15.png"></a></li>
 											<li><a href="index.html" class="scroll"><img alt="Hrvatski" src="img/cro15.png"></a></li>
@@ -104,15 +128,7 @@
 													</span> -->
 												</a>
 											</li>
-											<!-- Header Search
-											<li class="hidden-767">
-												<a href="#" class="header-search">
-													<span>
-														<i class="fa fa-search"></i>
-													</span>
-												</a>
-											</li>
-											<!-- Header Share -->
+
 											<li class="hidden-767">
 												<a href="#" class="header-share">
 													<span>
@@ -129,20 +145,7 @@
 												<i class="fa fa-times"></i>
 											</button>
 										</div>
-										<!-- Header Contact Content -->
-										<!-- Header Search Content
-										<div class="bg-white hide-show-content no-display header-search-content">
-											<form role="search" class="navbar-form vertically-absolute-middle">
-												<div class="form-group">
-													<input type="text" placeholder="Stavite ovdje tekst u tražilicu" class="form-control" id="s" name="s" value="" />
-												</div>
-											</form>
-											<button class="close">
-												<i class="fa fa-times"></i>
-											</button>
-										</div>
-										<!-- Header Search Content -->
-										<!-- Header Share Content -->
+
 										<div class="bg-white hide-show-content no-display header-share-content">
 											<div class="vertically-absolute-middle social-icon gray-bg icons-circle i-3x">
 											<a href="#">
@@ -174,13 +177,13 @@
 					</div><!-- navbar -->
 				</div><!-- Sticky Menu -->
 
-
+<!--
         <div class="privacy-banner" style="border-top: 2px solid #ff910e; display: none;">
           <div class="banner-wrapper">
             <p>Koristimo kolačiće u svrhu pružanja boljeg korisničkog iskustva na stranici. Ukoliko nastavite s pregledavanjem ove stranice pretpostavit ćemo da se slažete s tim <a href="#">Više...</a></p>
             <button aria-label="Close" style="background: #ff910e;" type="button"><span aria-hidden="true"></span></button>
           </div>
-        </div>
+        </div> -->
 
 
 
@@ -192,244 +195,240 @@
 
 
             <!-- Sticky Navbar -->
-            <div class="slider rs-slider-full" id="home">
-                <div class="tp-banner-container">
-                    <div class="tp-banner-full">
-                        <ul>
+<div class="slider rs-slider-full" id="home">
+  <div class="tp-banner-container">
+      <div class="tp-banner-full">
+          <ul>
 
+<!----slide1--->
+<li
+data-transition="slidehorizontal" data-slotamount="1" data-delay="3200" data-masterspeed="1000" data-thumb="http://curavita24.com/img/sections/slider/video_curavita24_cover-320x200.jpg"  data-saveperformance="off"  data-title="Cura vita 24">
+<img src="http://curavita24.com/img/sections/slider/video_curavita24_cover2.jpg"  alt="Cura vita 24"  data-bgposition="center center" data-bgfit=""
+data-bgrepeat="no-repeat">
 
-
-
-
-<li data-transition="slidehorizontal" data-slotamount="1" data-masterspeed="500" data-thumb="http://curavita24.com/img/sections/slider/video_curavita24_cover-320x200.jpg"
-data-fstransition="fade" data-fsmasterspeed="500" data-fsslotamount="7" data-saveperformance="off"  data-title="Cura vita 24" data-delay="1000">
-
-<img src="http://curavita24.com/img/sections/slider/video_curavita24_cover2.jpg"  alt="Cura vita 24"  data-bgposition="center center"
-data-bgfit="cover" data-bgrepeat="no-repeat" >
-
-        <div
-        class="tp-caption tp-fade fadeout fullscreenvideo tp-videolayer"
-        data-x="0"
-        data-y="0"
-        data-speed="1000"
-        data-start="1100"
-        data-easing="Power4.easeOut"
-        data-elementdelay="0.01"
-        data-endelementdelay="0.1"
-        data-videowidth="100%" data-videoheight="100%" data-videocontrols="none"
-        data-videoposter="http://curavita24.com/img/sections/slider/video_curavita24_cover2.jpg" data-videowebm="http://curavita24.com/video/curav24.webm"
-        data-videomp4="http://curavita24.com/video/curav24.mp4" data-posterOnMObile="off" data-videopreload="auto" data-videoloop="none"
-        data-forceCover="1" data-aspectratio="16:9" data-endspeed="100"
-        data-endeasing="Power4.easeIn"
-        data-autoplay="true"
-        data-autoplayonlyfirsttime="false"
-        data-nextslideatend="true"
-        data-volume="mute" data-forcerewind="on"
-        style="z-index: 5;">
-        </div>
-
-
-<!-- <div
+<div
 class="tp-caption black_thin_whitebg_30 customin ltl tp-resizeme"
-data-x="730"
+data-x="230"
 data-y="360"
 data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
 data-speed="1500"
-data-start="2100"
+data-start="1500"
 data-easing="Power4.easeInOut"
 data-splitin="none"
 data-splitout="none"
 data-elementdelay="0.01"
 data-endelementdelay="0.1"
 data-endspeed="1000"
-data-endeasing="Power4.easeIn"style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
-</div> -->
 
-            <div
-            class="tp-caption black_thin_whitebg_Transparent customin ltl tp-resizeme"
-            data-x="116"
-            data-y="278"
-            data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-            data-speed="1500"
-            data-start="1100"
-            data-easing="Power4.easeOut"
-            data-splitin="chars"
-            data-splitout="none"
-            data-elementdelay="0.1"
-            data-endelementdelay="0.1"
-            data-end="25000"
-            data-endspeed="4000"
-            data-endeasing="Power4.easeIn"style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">Cura  Vita
-            </div>
+data-endeasing="Power4.easeIn" data-end="3350" style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;" >Vodeći pružatelj usluge za
+</div>
 
+<div
+class="tp-caption black_heavy_60 customin ltl tp-resizeme"
+data-x="239"
+data-y="278"
+data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+data-speed="1500"
+data-start="1500"
+data-easing="Power4.easeOut"
+data-splitin="chars"
+data-splitout="none"
+data-elementdelay="0.1"
+data-endelementdelay="0.1"
+data-endspeed="1000"
+data-endeasing="Power4.easeIn"  data-end="3350" style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">Cura  Vita
+</div>
 
-            <div
-            class="tp-caption randomrotate ltl"
-            data-x="320"
-            data-y="291"
-            data-speed="1500"
-            data-start="1600"
-            data-easing="Power4.easeOut"
-            data-elementdelay="0.1"
-            data-endelementdelay="0.1"
-            data-end="25000"
-            data-endspeed="4000"
-            data-endeasing="Power4.easeIn_"style="z-index: 8;">
-            <img src="http://curavita24.com/img/sections/slider/yellow-bg2.png" alt="">
-            </div>
+<div
+class="tp-caption randomrotate ltl"
+data-x="500"
+data-y="291"
+data-speed="1500"
+data-start="1200"
+data-easing="Power4.easeOut"
+data-elementdelay="0.1"
+data-endelementdelay="0.1"
+data-endspeed="1000"
+data-endeasing="Power4.easeIn"  data-end="3350" style="z-index: 8;">
+<img src="http://curavita24.com/img/sections/slider/yellow-bg2.png" alt="">
+</div>
 
+<div
+class="tp-caption light_heavy_34 customin ltl tp-resizeme"
+data-x="520"
+data-y="296"
+data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+data-speed="1500"
+data-start="1200"
+data-easing="Power4.easeOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.01"
+data-endelementdelay="0.1"
+data-endspeed="1000"
+data-endeasing="Power4.easeIn"  data-end="3350" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">24
+</div>
 
-            <div
-            class="tp-caption light_heavy_34 customin ltl tp-resizeme"
-            data-x="360"
-            data-y="296"
-            data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-            data-speed="1500"
-            data-start="1800"
-            data-easing="Power4.easeOut"
-            data-splitin="none"
-            data-splitout="none"
-            data-elementdelay="0.1"
-            data-endelementdelay="0.1"
-            data-end="25000"
-            data-endspeed="4000"
-            data-endeasing="Power4.easeIn_"style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">24
-            </div>
+<div
+class="tp-caption black_thin_whitebg_30 customin ltl tp-resizeme"
+data-x="230"
+data-y="416"
+data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+data-speed="1500"
+data-start="1200"
+data-easing="Power4.easeInOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.01"
+data-endelementdelay="0.1"
+data-endspeed="1000"
+data-endeasing="Power4.easeIn"  data-end="3350" style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">pomoć osobama treće životne
+</div>
 
-              <!-- <div
-              class="tp-caption black_thin_whitebg_30 lfb ltl tp-resizeme"
-              data-x="center"
-              data-y="340"
-              data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-              data-speed="1500"
-              data-start="2400"
-              data-easing="Power4.easeInOut"
-              data-splitin="none"
-              data-splitout="none"
-              data-elementdelay="0.01"
-              data-endelementdelay="0.1"
-              data-endspeed="1000"
-              data-endeasing="Power4.easeIn"style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">Vodeći pružatelj usluge za <br/>
-              pomoć osobama treće životne <br/> dobi u kući i na putovanju
-              </div> -->
-
-
-              <div
-              class="tp-caption black_thin_whitebg_30 lfb ltl tp-resizeme"
-              data-x="center" data-hoffset="0"
-              data-y="340" data-voffset="-60"
-              data-speed="1800"
-              data-start="1900"
-              data-easing="Power4.easeInOut"
-              data-splitin="none"
-              data-splitout="none"
-              data-elementdelay="0.01"
-              data-endelementdelay="0.2"
-              data-end="25000"
-              data-endspeed="4000"
-              data-endeasing="Power4.easeIn_" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Vodeći pružatelj usluge za
-              pomoć u kući osobama treće životne dobi
-              </div>
-
-
+<div
+class="tp-caption black_thin_whitebg_30 customin ltl tp-resizeme"
+data-x="230"
+data-y="470"
+data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+data-speed="1500"
+data-start="1300"
+data-easing="Power4.easeInOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.01"
+data-endelementdelay="0.1"
+data-endspeed="1000"
+data-endeasing="Power4.easeIn" data-end="3350" style="z-index: 11; max-width: auto; max-height: auto; white-space: nowrap;">dobi u kući treće životne dobi
+</div>
 </li>
 
 
+<!---slide2--->
+
 	<li
-data-transition="slidehorizontal" data-slotamount="1" data-delay="2000" data-masterspeed="1000" data-thumb="http://curavita24.com/img/sections/slider/slider38-bg-320x200.jpg"  data-saveperformance="off"  data-title="Bit ćemo s vama">
-<img src="http://curavita24.com/img/sections/slider/slider38-bg-empty2.jpg"  alt="Bit ćemo s vama"  data-bgposition="center center" data-bgfit=""
+data-transition="slidehorizontal" data-slotamount="1" data-delay="5000" data-masterspeed="1000" data-thumb="img/sections/slider/curavita-team.jpg"  data-saveperformance="off"  data-title="Klijent i njegove potrebe">
+<img src="img/sections/slider/curavita-team.jpg"  alt="Klijent i njegove potrebe"  data-bgposition="center center" data-bgfit=""
 data-bgrepeat="no-repeat">
 
+
         <div
-        class="tp-caption lft customout rs-parallaxlevel-0"
-        data-x="-372"
-        data-y="-126"
-        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+        class="tp-caption black_thin_whitebg_30 lfb ltl tp-resizeme"
+        data-x="center" data-hoffset="0"
+        data-y="400" data-voffset="60"
         data-speed="1000"
-        data-start="00"
-        data-easing="Power3.easeInOut"
+        data-start="500"
+        data-easing="Power4.easeInOut"
+        data-splitin="none"
+        data-splitout="none"
         data-elementdelay="0.1"
         data-endelementdelay="0.1"
-        data-end="5250" style="z-index: 5;">
-        <img src="http://curavita24.com/img/sections/slider/dummy.png" alt="" data-lazyload="http://curavita24.com/img/sections/slider/ho1.jpg">
+        data-endspeed="1000"
+        data-endeasing="Power4.easeIn" data-end="5350" style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">Klijent i njegove potrebe su u središtu naše pažnje.
         </div>
 
-          <div
-          class="tp-caption lft customout rs-parallaxlevel-0"
-          data-x="268"
-          data-y="-126"
-          data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-          data-speed="1000"
-          data-start="00"
-          data-easing="Power3.easeInOut"
-          data-elementdelay="0.1"
-          data-endelementdelay="0.1"
-          data-end="5250"style="z-index: 6;">
-          <img src="http://curavita24.com/img/sections/slider/dummy.png" alt="" data-lazyload="http://curavita24.com/img/sections/slider/ho2.jpg">
-          </div>
 
-          <div
-          class="tp-caption lft customout rs-parallaxlevel-0"
-          data-x="908"
-          data-y="-126"
-          data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-          data-speed="1000"
-          data-start="00"
-          data-easing="Power3.easeInOut"
-          data-elementdelay="0.1"
-          data-endelementdelay="0.1"
-          data-end="5250"style="z-index: 7;">
-          <img src="http://curavita24.com/img/sections/slider/dummy.png" alt="" data-lazyload="http://curavita24.com/img/sections/slider/ho3.jpg">
-          </div>
 
-          <div
-          class="tp-caption lft customout rs-parallaxlevel-0"
-          data-x="-372"
-          data-y="301"
-          data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-          data-speed="1000"
-          data-start="00"
-          data-easing="Power3.easeInOut"
-          data-elementdelay="0.1"
-          data-endelementdelay="0.1"
-          data-end="5250"style="z-index: 7;">
-          <img src="http://curavita24.com/img/sections/slider/dummy.png" alt="" data-lazyload="http://curavita24.com/img/sections/slider/ho4.jpg">
-          </div>
+        <div
+        class="tp-caption black_thin_orangeBg_Transparent lfb ltl tp-resizeme"
+        data-x="-150" data-hoffset="0"
+        data-y="470" data-voffset="0"
+        data-speed="1100"
+        data-start="1000"
+        data-easing="Power4.easeInOut"
+        data-splitin="none"
+        data-splitout="none"
+        data-elementdelay="0.01"
+        data-endelementdelay="0.1"
+        data-endspeed="1000"
+        data-endeasing="Power4.easeIn" data-end="5350" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Naši klijenti cijene naš sveobuhvatni pristup koji se temelji na
+        </div>
 
-          <div
-          class="tp-caption lft customout rs-parallaxlevel-0"
-          data-x="268"
-          data-y="301"
-          data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-          data-speed="1000"
-          data-start="00"
-          data-easing="Power3.easeInOut"
-          data-elementdelay="0.1"
-          data-endelementdelay="0.1"
-          data-end="5250"style="z-index: 7;">
-          <img src="http://curavita24.com/img/sections/slider/dummy.png" alt="" data-lazyload="http://curavita24.com/img/sections/slider/ho5.jpg">
-          </div>
 
-          <div
-          class="tp-caption lft customout rs-parallaxlevel-0"
-          data-x="908"
-          data-y="301"
-          data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-          data-speed="1000"
-          data-start="00"
-          data-easing="Power3.easeInOut"
-          data-elementdelay="0.1"
-          data-endelementdelay="0.1"
-          data-end="5250"style="z-index: 7;">
-          <img src="http://curavita24.com/img/sections/slider/dummy.png" alt="" data-lazyload="http://curavita24.com/img/sections/slider/ho6.jpg">
-          </div>
+        <div
+        class="tp-caption black_thin_orangeBg_Transparent lfb ltl tp-resizeme"
+        data-x="-150" data-hoffset="0"
+        data-y="530" data-voffset="60"
+        data-speed="1800"
+        data-start="1100"
+        data-easing="Power4.easeOut"
+        data-splitin="none"
+        data-splitout="none"
+        data-elementdelay="0.1"
+        data-endelementdelay="0.1"
+        data-endspeed="1000"
+        data-endeasing="Power4.easeIn"  data-end="5350" style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;"> njihovim individualnim željama i potrebama
+        </div>
+	</li>
+
+
+
+
+
+
+<!--slider3 -->
+	<li
+data-transition="slidehorizontal" data-slotamount="1" data-delay="5000" data-masterspeed="1000" data-thumb="img/sections/slider/curavita2_sm300x200.jpg"  data-saveperformance="off"  data-title="Jer ja to zaslužujem!">
+<img src="img/sections/slider/curavita2_sm.jpg"  alt="Jer ja to zaslužujem!"  data-bgposition="center center" data-bgfit=""
+data-bgrepeat="no-repeat">
+
+
+
+<div
+class="tp-caption black_heavy_60 customin ltl tp-resizeme"
+data-x="239"
+data-y="278"
+data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+data-speed="1500"
+data-start="1500"
+data-easing="Power4.easeOut"
+data-splitin="chars"
+data-splitout="none"
+data-elementdelay="0.1"
+data-endelementdelay="0.1"
+data-endspeed="1000"
+data-endeasing="Power4.easeIn"  data-end="3350" style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">Cura  Vita
+</div>
+
+<div
+class="tp-caption randomrotate ltl"
+data-x="500"
+data-y="291"
+data-speed="1500"
+data-start="1200"
+data-easing="Power4.easeOut"
+data-elementdelay="0.1"
+data-endelementdelay="0.1"
+data-endspeed="1000"
+data-endeasing="Power4.easeIn"  data-end="3350" style="z-index: 8;">
+<img src="http://curavita24.com/img/sections/slider/yellow-bg2.png" alt="">
+</div>
+
+<div
+class="tp-caption light_heavy_34 customin ltl tp-resizeme"
+data-x="520"
+data-y="296"
+data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+data-speed="1500"
+data-start="1200"
+data-easing="Power4.easeOut"
+data-splitin="none"
+data-splitout="none"
+data-elementdelay="0.01"
+data-endelementdelay="0.1"
+data-endspeed="1000"
+data-endeasing="Power4.easeIn"  data-end="3350" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">24
+</div>
+
+
+
+
 
 
 
           <div
           class="tp-caption black_thin_whitebg_60 lfb ltl tp-resizeme"
           data-x="center" data-hoffset="0"
-          data-y="center" data-voffset="-60"
+          data-y="430" data-voffset="-60"
           data-speed="1000"
           data-start="10"
           data-easing="Power4.easeInOut"
@@ -438,231 +437,131 @@ data-bgrepeat="no-repeat">
           data-elementdelay="0.1"
           data-endelementdelay="0.1"
           data-endspeed="1000"
-          data-endeasing="Power4.easeIn" data-end="5350"style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">Bit ćemo s vama
+          data-endeasing="Power4.easeIn" data-end="5350"style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">Jer ja to zaslužujem!
           </div>
 
-<!--<div
-class="tp-caption randomrotate ltl"
-data-x="center" data-hoffset="155"
-data-y="center" data-voffset="9"
-data-speed="1000"
-data-start="2300"
-data-easing="Power4.easeInOut"
-data-elementdelay="0.01"
-data-endelementdelay="0.1"
-data-endspeed="1000"
-data-endeasing="Power4.easeIn"style="z-index: 8;"><img
-src="http://curavita24.com/img/sections/slider/yellow-bg.png" alt="" data-ww="220" data-hh="85">
-</div>-->
+
 
         <div
-        class="tp-caption black_thin_whitebg_30 lfb ltl tp-resizeme"
-        data-x="center" data-hoffset="0"
-        data-y="center" data-voffset="10"
+        class="tp-caption black_thin_whitebg_20 lfb ltl tp-resizeme"
+        data-x="center" data-hoffset="10"
+        data-y="520" data-voffset="10"
         data-speed="1000"
-        data-start="0"
+        data-start="1000"
         data-easing="Power4.easeInOut"
         data-splitin="none"
         data-splitout="none"
         data-elementdelay="0.01"
         data-endelementdelay="0.1"
         data-endspeed="1000"
-        data-endeasing="Power4.easeIn" data-end="5350" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">na rekreaciji, razonodi, zabavi i odmoru
+        data-endeasing="Power4.easeIn" data-end="5350" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Uz Cura Vitu 24 sam našao optimalnog partnera, snažan oslonac koji mi
         </div>
 
-<!--<div
-<div
-class="tp-caption black_thin_whitebg_30 customin ltl tp-resizeme"
-data-x="700"
-data-y="360"
-data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-data-speed="1500"
-data-start="2100"
-data-easing="Power4.easeInOut"
-data-splitin="none"
-data-splitout="none"
-data-elementdelay="0.01"
-data-endelementdelay="0.1"
-data-endspeed="1000"
-data-endeasing="Power4.easeIn"style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">na rekreaciji,
-</div>
 
 
-
-
-<div
-class="tp-caption black_thin_whitebg_60 customin ltl tp-resizeme"
-data-x="700"
-data-y="278"
-data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-data-speed="1500"
-data-start="1100"
-data-easing="Power4.easeOut"
-data-splitin="chars"
-data-splitout="none"
-data-elementdelay="0.1"
-data-endelementdelay="0.1"
-data-endspeed="1000"
-data-endeasing="Power4.easeIn"style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">Bit ćemo s vama
-</div>
-
-<div
-class="tp-caption black_thin_whitebg_30 customin ltl tp-resizeme"
-data-x="700"
-data-y="405"
-data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-data-speed="1500"
-data-start="2400"
-data-easing="Power4.easeInOut"
-data-splitin="none"
-data-splitout="none"
-data-elementdelay="0.01"
-data-endelementdelay="0.1"
-data-endspeed="1000"
-data-endeasing="Power4.easeIn"style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;">razonodi, zabavi
-</div>
-
-<div
-class="tp-caption black_thin_whitebg_30 customin ltl tp-resizeme"
-data-x="700"
-data-y="450"
-data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-data-speed="1500"
-data-start="2700"
-data-easing="Power4.easeInOut"
-data-splitin="none"
-data-splitout="none"
-data-elementdelay="0.01"
-data-endelementdelay="0.1"
-data-endspeed="1000"
-data-endeasing="Power4.easeIn"style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">i odmoru
-</div>-->
-
-            <div
-            class="tp-caption light_thin_60 customin ltl tp-resizeme"
-            data-x="950"
-            data-y="278"
-            data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-            data-speed="1500"
-            data-start="1800"
-            data-easing="Power4.easeOut"
-            data-splitin="chars"
-            data-splitout="none"
-            data-elementdelay="0.1"
-            data-endelementdelay="0.1"
-            data-endspeed="1000"
-            data-endeasing="Power4.easeIn"style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">
-            </div>
+        <div
+        class="tp-caption black_thin_whitebg_20 lfb ltl tp-resizeme"
+        data-x="center" data-hoffset="10"
+        data-y="600" data-voffset="60"
+        data-speed="1000"
+        data-start="1100"
+        data-easing="Power4.easeInOut"
+        data-splitin="none"
+        data-splitout="none"
+        data-elementdelay="0.01"
+        data-endelementdelay="0.1"
+        data-endspeed="1000"
+        data-endeasing="Power4.easeIn" data-end="5450" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">omogućuje da dostojanstveno živim u svom vlastitom domu
+        </div>
 	</li>
 
 
 
-
-
+<!--
+<!--slider4 -->
 <li
 data-transition="slidehorizontal" data-slotamount="1" data-delay="3000" data-masterspeed="1000"
-data-thumb="http://curavita24.com/img/sections/slider/slider36-bg-320x200.jpg"  data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off"  data-title="Vaš smo oslonac">
-<img src="http://curavita24.com/img/sections/slider/slider38-bg-empty2.jpg"  alt="Vaš smo oslonac"  data-bgposition="center center" data-bgfit="cover"
+data-thumb="img/sections/slider/curavita1_sm300x200.jpg"  data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off"  data-title="Život po mojoj mjeri!">
+<img src="img/sections/slider/curavita1_sm.jpg"  alt="Život po mojoj mjeri!"  data-bgposition="center center" data-bgfit="cover"
  data-bgrepeat="no-repeat">
 
-            <div
-            class="tp-caption lft customout rs-parallaxlevel-0"
-            data-x="-380"
-            data-y="-98"
-            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-            data-speed="700"
-            data-start="00"
-            data-easing="Power3.easeInOut"
-            data-elementdelay="0.1"
-            data-endelementdelay="0.1"
-            data-end="5250"style="z-index: 5;">
-            <img src="http://curavita24.com/img/sections/slider/dummy.png" alt="" data-lazyload="http://curavita24.com/img/sections/slider/us1.jpg">
-            </div>
 
-            <div
-            class="tp-caption lft customout rs-parallaxlevel-0"
-            data-x="100"
-            data-y="-98"
-            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-            data-speed="700"
-            data-start="00"
-            data-easing="Power3.easeInOut"
-            data-elementdelay="0.1"
-            data-endelementdelay="0.1"
-            data-end="5250"style="z-index: 6;">
-            <img src="http://curavita24.com/img/sections/slider/dummy.png" alt="" data-lazyload="http://curavita24.com/img/sections/slider/us2.jpg">
-            </div>
+ <div
+ class="tp-caption black_heavy_60 customin ltl tp-resizeme"
+ data-x="239"
+ data-y="-78"
+ data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+ data-speed="1500"
+ data-start="1500"
+ data-easing="Power4.easeOut"
+ data-splitin="chars"
+ data-splitout="none"
+ data-elementdelay="0.1"
+ data-endelementdelay="0.1"
+ data-endspeed="1000"
+ data-endeasing="Power4.easeIn"  data-end="3350" style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">Cura  Vita
+ </div>
 
-            <div
-            class="tp-caption lft customout rs-parallaxlevel-0"
-            data-x="580"
-            data-y="-98"
-            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-            data-speed="700"
-            data-start="00"
-            data-easing="Power3.easeInOut"
-            data-elementdelay="0.1"
-            data-endelementdelay="0.1"
-            data-end="5250"style="z-index: 7;">
-            <img src="http://curavita24.com/img/sections/slider/dummy.png" alt="" data-lazyload="http://curavita24.com/img/sections/slider/us3.jpg">
-            </div>
+ <div
+ class="tp-caption randomrotate ltl"
+ data-x="500"
+ data-y="-91"
+ data-speed="1500"
+ data-start="1200"
+ data-easing="Power4.easeOut"
+ data-elementdelay="0.1"
+ data-endelementdelay="0.1"
+ data-endspeed="1000"
+ data-endeasing="Power4.easeIn"  data-end="3350" style="z-index: 8;">
+ <img src="http://curavita24.com/img/sections/slider/yellow-bg2.png" alt="">
+ </div>
 
-            <div
-            class="tp-caption lft customout rs-parallaxlevel-0"
-            data-x="1060"
-            data-y="-98"
-            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-            data-speed="700"
-            data-start="00"
-            data-easing="Power3.easeInOut"
-            data-elementdelay="0.1"
-            data-endelementdelay="0.1"
-            data-end="5250"style="z-index: 7;">
-            <img src="http://curavita24.com/img/sections/slider/dummy.png" alt="" data-lazyload="http://curavita24.com/img/sections/slider/us4.jpg">
-            </div>
-
-            <div
-            class="tp-caption black_thin_whitebg_60 lfb ltl tp-resizeme"
-            data-x="center" data-hoffset="0"
-            data-y="center" data-voffset="-60"
-            data-speed="2000"
-            data-start="00"
-            data-easing="Power4.easeInOut"
-            data-splitin="none"
-            data-splitout="none"
-            data-elementdelay="0.1"
-            data-endelementdelay="0.1"
-            data-endspeed="1000"
-            data-endeasing="Power4.easeIn" data-end="1350"style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">Vaš smo oslonac
-            </div>
-
-            <!--<div
-            class="tp-caption randomrotate ltl"
-            data-x="center" data-hoffset="155"
-            data-y="center" data-voffset="9"
-            data-speed="1000"
-            data-start="2300"
-            data-easing="Power4.easeInOut"
-            data-elementdelay="0.01"
-            data-endelementdelay="0.1"
-            data-endspeed="1000"
-            data-endeasing="Power4.easeIn"style="z-index: 8;"><img
-            src="http://curavita24.com/img/sections/slider/yellow-bg.png" alt="" data-ww="220" data-hh="85">
-            </div>-->
+ <div
+ class="tp-caption light_heavy_34 customin ltl tp-resizeme"
+ data-x="520"
+ data-y="-96"
+ data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+ data-speed="1500"
+ data-start="1200"
+ data-easing="Power4.easeOut"
+ data-splitin="none"
+ data-splitout="none"
+ data-elementdelay="0.01"
+ data-endelementdelay="0.1"
+ data-endspeed="1000"
+ data-endeasing="Power4.easeIn"  data-end="3350" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">24
+ </div>
 
             <div
             class="tp-caption black_thin_whitebg_30 lfb ltl tp-resizeme"
             data-x="center" data-hoffset="0"
+            data-y="center" data-voffset="-60"
+            data-speed="1000"
+            data-start="100"
+            data-easing="Power4.easeInOut"
+            data-splitin="none"
+            data-splitout="none"
+            data-elementdelay="0.1"
+            data-endelementdelay="0.1"
+            data-endspeed="1000"
+            data-endeasing="Power4.easeIn" data-end="3350"style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">Život po mojoj mjeri!
+            </div>
+
+
+
+            <div
+            class="tp-caption black_thin_whitebg_20 lfb ltl tp-resizeme"
+            data-x="center" data-hoffset="0"
             data-y="340" data-voffset="-60"
-            data-speed="1700"
-            data-start="0"
+            data-speed="1200"
+            data-start="100"
             data-easing="Power4.easeInOut"
             data-splitin="none"
             data-splitout="none"
             data-elementdelay="0.01"
             data-endelementdelay="0.1"
             data-endspeed="1000"
-            data-endeasing="Power4.easeIn" data-end="1350" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">u kućanskim poslovima, njegovanju i kretanju.
+            data-endeasing="Power4.easeIn" data-end="3650" style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Oslonac u kućanskim poslovima, njegovanju i kretanju
             </div>
 
 </li>
@@ -671,6 +570,7 @@ data-thumb="http://curavita24.com/img/sections/slider/slider36-bg-320x200.jpg"  
                     </div>
                 </div>
             </div>
+
 
 <style scoped>
 .tp-caption.black_heavy_60,.black_heavy_60{font-size:60px;line-height:60px;font-weight:900;font-family:Raleway;color:rgb(0,0,0);text-decoration:none;background-color:transparent;text-shadow:none;border-width:0px;border-color:rgb(0,0,0);border-style:none}
@@ -687,7 +587,46 @@ data-thumb="http://curavita24.com/img/sections/slider/slider36-bg-320x200.jpg"  
 
 
 
+<section>
+  <div id="slider2" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#slider2" data-slide-to="0" class="active"></li>
+      <li data-target="#slider2" data-slide-to="1"></li>
+      <li data-target="#slider2" data-slide-to="2"></li>
+      <li data-target="#slider2" data-slide-to="3"></li>
+    </ol>
 
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="img/sections/slider/responsiv/video_curavita24_cover2.jpg" alt="CuraVita24" style="width:100%;">
+      </div>
+
+      <div class="item">
+          <img src="img/sections/slider/responsiv/curavita-team.jpg" alt="CuraVita24" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="img/sections/slider/responsiv/curavita2_sm.jpg" alt="Jer ja to zaslužujem" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="img/sections/slider/responsiv/curavita1_sm.jpg" alt="Život po mjeri" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#slider2" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Prije</span>
+    </a>
+    <a class="right carousel-control" href="#slider2" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Sljedeći</span>
+    </a>
+  </div>
+</section>
 
 
 
@@ -719,7 +658,7 @@ data-thumb="http://curavita24.com/img/sections/slider/slider36-bg-320x200.jpg"  
                 Cura Vita 24 – Pouzdan i siguran izbor za osobe treće životne dobi i članove njihove obitelji,
                  koji treću dob žele provesti u udobnosti vlastitog doma</h5>
                  <h3>Obratite nam se još danas, za bolje Sutra!</h3>
-							<a href="#contact-us" class="btn btn-transparent-black btn-lg" data-animation="pulse">Kontaktirajte nas! (da maknemo?)  </a>
+							<a href="#contact-us" class="btn btn-transparent-black btn-lg scroll" data-animation="pulse">Kontaktirajte nas!</a>
               <br/>
 						</div>
 					</div>
@@ -869,7 +808,7 @@ data-thumb="http://curavita24.com/img/sections/slider/slider36-bg-320x200.jpg"  
 					<div class="row">
 						<div class="col-md-12 top-pad-40 bottom-pad-40 text-center">
 							<h3 class="text-uppercase" data-animation="fadeInUp">Informirajte se o mogućnostima zaposlenja u Hrvatskoj i inozemstvu</h3>
-							<a href="#contact-us" class="btn btn-transparent-black btn-lg" data-animation="pulse">Kontaktirajte nas</a>
+							<a href="#contact-us" class="btn btn-transparent-black btn-lg scroll" data-animation="pulse">Kontaktirajte nas</a>
 						</div>
 					</div>
 				</div>
@@ -1260,10 +1199,10 @@ data-thumb="http://curavita24.com/img/sections/slider/slider36-bg-320x200.jpg"  
 							<h3><a class="text-color" href="mailto:info@curavita24.com">info(et)curavita24.com</a></h3>
 							<div class="icon-6 static-color-icons icons-circle">
 								<a href="#"><span class="pe-so-facebook"></span></a>
-								<a href="#"><span class="pe-so-twitter"></span></a>
+								<!-- <a href="#"><span class="pe-so-twitter"></span></a>
 								<a href="#"><span class="pe-so-google-plus"></span></a>
 								<a href="#"><span class="pe-so-pinterest"></span></a>
-								<a href="#"><span class="pe-so-linkedin"></span></a>
+								<a href="#"><span class="pe-so-linkedin"></span></a> -->
 							 </div>
 						</div>
 						<div class="col-md-6">
@@ -1300,7 +1239,9 @@ data-thumb="http://curavita24.com/img/sections/slider/slider36-bg-320x200.jpg"  
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 top-pad-20 bottom-pad-20 text-center">
-							<h3 class="text-uppercase" tb-margin-20 black" data-animation="fadeInRight">Hvala na posjeti <img class="site_logo" alt="Site Logo" src="img/logo2.png" height="86"> Pouzdajte se u nas</h3>
+							<h3 class="text-uppercase"
+              tb-margin-20 black" data-animation="fadeInRight">Hvala na posjeti <img class="site_logo" alt="Site Logo" src="img/logo2.png" height="86">
+                Pouzdajte se u nas</h3>
 						</div>
 					</div>
 				</div>
@@ -1311,6 +1252,8 @@ data-thumb="http://curavita24.com/img/sections/slider/slider36-bg-320x200.jpg"  
 
 			<!-- call to action -->
 			<!-- request -->
+
+
 			<footer id="footer">
 				<div class="footer-widget">
 					<div class="container">
@@ -1336,7 +1279,7 @@ data-thumb="http://curavita24.com/img/sections/slider/slider36-bg-320x200.jpg"  
 								<nav>
 									<ul>
 										<!-- List Items -->
-										<li><a href="posaoCuraVita.html">PRIJAVA ZA POSAO</a></li>
+										<li><a href="posaoCuraVita.php">PRIJAVA ZA POSAO</a></li>
                     <li><a href="opis_posla.html">OPIS POSLOVA</a></li>
 
 									</ul>
@@ -1375,7 +1318,7 @@ data-thumb="http://curavita24.com/img/sections/slider/slider36-bg-320x200.jpg"  
 
 
 									<!-- Title -->
-									<h3 class="title">Prazno</h3>
+									<h3 class="title">Linkovi</h3>
 								</div>
 								<div>
 									<!-- Text -->
@@ -1395,11 +1338,8 @@ data-thumb="http://curavita24.com/img/sections/slider/slider36-bg-320x200.jpg"  
 								<div class="footer-count">
 									<p class="count-number" data-count="79550">happy clients : <span class="counter"></span></p>
 								</div>-->
-								<!-- Social Links -->
-								<div class="social-icon gray-bg icons-circle i-3x">
-									<a href="#"><i class="fa fa-facebook"></i></a>
 
-								</div>
+
 							</div>
 							<!-- .newsletter -->
 						</div>
@@ -1418,10 +1358,10 @@ data-thumb="http://curavita24.com/img/sections/slider/slider36-bg-320x200.jpg"  
 
 							<!-- Copyrights -->
 							<div class="col-xs-12 col-sm-6 col-md-6">
-								 <strong>&copy; 2019 </strong><a href="mailto:vista.dizajn@gmail.com"><strong>Adricongroup d.o.o.</strong></a>
+								 <strong>&copy; 2019 </strong><a href="https://adricongroup.com/"><strong>Adricongroup d.o.o.</strong></a>
 								<br>
 								<!-- Terms Link -->
-								<a href="mailto:vista.dizajn@gmail.com"><strong>Web project & design: Adricongroup d.o.o.</strong></a>
+								<a href="https://adricongroup.com/"><strong>Web project & design: Adricongroup d.o.o.</strong></a>
 							</div>
 							<div class="col-xs-2  col-sm-6 col-md-6 text-right page-scroll gray-bg icons-circle i-3x">
 								<!-- Goto Top -->
@@ -1482,6 +1422,10 @@ data-thumb="http://curavita24.com/img/sections/slider/slider36-bg-320x200.jpg"  
         <!-- Custom Js Code -->
         <script type="text/javascript" src="js/custom.js"></script>
         <!-- Scripts -->
+
+ <script type="text/javascript" charset="UTF-8" 
+src="http://chs03.cookie-script.com/s/da12c12eeadc11dd0bc7120d98361c36.js"></script>
+
 
 
 

@@ -484,6 +484,7 @@
    /* #map{  margin-bottom: -300px;} */
       #map{  margin-bottom: -204px;}
    .map-responsive{padding-bottom:36.25%;}
+     #slider2{display: none;}
 	}
 
 
@@ -493,6 +494,8 @@
    /* #map{  margin-bottom: -300px;} */
       #map{  margin-bottom: -200px;}
    .map-responsive{padding-bottom:46.25%;}
+       #home{display:none;}
+
 	}
 
 
@@ -501,23 +504,20 @@
 
 /* ---------- MAX 1199px ---------- */
  @media (min-width: 991px) and (max-width: 1199px){
-	.double-img img{
-		max-width:60%;
-	}
-
+	.double-img img{max-width:60%;}
   #map{  margin-bottom: -245px;}
   .map-responsive{padding-bottom:76.25%;}
-
-
+  #home{display:none;}
 }
 /* ---------- MAX 480px ---------- */
  @media(max-width: 480px){
 	.double-img img{
 		max-width:50%;
+
 	}
 
 
-
+#home{display:none;}
 
 
 
@@ -553,7 +553,8 @@
 
   #map{  margin-bottom: -175px;}
   .map-responsive{padding-bottom:76.25%;}
-
+	#home{display:none;}
+		 #sm{width: 100%;}
 
 
 }
@@ -663,6 +664,9 @@
   #map{  margin-bottom: -117px;}
   .map-responsive{padding-bottom:76.25%;}
 
+		#home{display:none;}
+			 #sm{width: 100%;}
+
 
 }
 
@@ -698,6 +702,40 @@
 
   #map{  margin-bottom: -90px;}
   .map-responsive{padding-bottom:76.25%;}
+  .section-titleJob h5{font-size: 18px;  padding: 10px 0;}
+
+
+  #home{display:none;}
+	.top-pad-150{padding-top:10px;}
+	 #sm{width: 100%;}
+
+
+
+	 .Title2{
+	width: 100%;
+	padding: 7px 5px 1px 5px;
+	text-align: center;
+}
+
+	 .Title1{
+	width: 100%;
+	padding: 7px 5px 1px 5px;
+	text-align: center;
+}
+
+
+.Title1Orange{
+	padding: 7px 5px 1px 5px;
+	text-align: center;
+	width:100%;
+	margin-bottom: 10px;
+}
+
+.Title1Blue{
+	padding: 7px 5px 1px 5px;
+	text-align: center;
+	width: 100%;
+}
 
 
 }
